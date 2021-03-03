@@ -1,0 +1,511 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Rubik:wght@500&display=swap"); /*
+font-family: 'Poppins', sans-serif;
+font-family: 'Rubik', sans-serif;
+*/
+/*General*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  background-color: #fcfefe;
+}
+
+h1,
+h5 {
+  color: #232931;
+  font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 30px;
+}
+
+h5 {
+  font-size: 10px;
+}
+
+h3,
+h4 {
+  color: #11d3bc;
+  font-family: "Poppins", sans-serif;
+}
+
+li,
+h2,
+p,
+label {
+  font-family: "Poppins", sans-serif;
+}
+
+.plax {
+  width: 98%;
+  height: 250px;
+  position: relative;
+  margin: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#about,
+#emblem,
+#studies,
+#Comm {
+  height: 85vh;
+}
+
+/*Navigation & Header*/
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navLinks ul {
+  display: flex;
+  padding: 10px;
+}
+
+.navLinks li {
+  list-style: none;
+  padding: 10px;
+  transition: 250ms ease-in;
+}
+
+.navLinks a {
+  color: #393e46;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 150ms ease-in;
+}
+
+.navLinks a:hover {
+  color: #11d3bc;
+}
+
+.navLinks li:hover {
+  transform: scale(1.1);
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+  padding: 20px;
+}
+
+/*Main page*/
+#pg-1 {
+  display: grid;
+  grid-template-rows: 88vh;
+}
+
+.child {
+  line-height: 3%;
+  position: relative;
+  align-self: center;
+  padding-left: 50px;
+}
+
+.child h3 {
+  font-size: 50px;
+}
+.child h4 {
+  font-size: 30px;
+}
+
+.child button,
+input[type="submit"] {
+  background-color: #11d3bc;
+  color: #fcfefe;
+  border: none;
+  font-size: 20px;
+  border-radius: 25px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  transition: 150ms ease-in;
+  outline: none;
+  cursor: pointer;
+}
+
+.child button:hover {
+  background-color: #0a9181;
+  transform: scale(1.05);
+}
+
+.doc {
+  position: absolute;
+  z-index: -1;
+  top: -50%;
+  animation: doc 2s ease-in 0s 1 forwards;
+}
+
+@keyframes doc {
+  0% {
+    transform: translateX(0%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(225%);
+    opacity: 1;
+  }
+}
+
+.pLax1 {
+  background-image: url(Images/mask.jpg);
+}
+
+.backdrop {
+  background-color: #0a9181;
+  height: 250px;
+  width: 500px;
+  position: absolute;
+  z-index: -2;
+  right: 25%;
+  transform: skewX(-50deg);
+}
+
+.btn {
+  display: grid;
+  grid-template-columns: 18% 18%;
+}
+
+/*About page*/
+#about h1,
+#emblem h1,
+#studies h1,
+#Comm h1,
+.stCol2,
+.comCol-3,
+#Comm h2 {
+  text-align: center;
+}
+
+#about h3,
+#emblem h3,
+#studies h3,
+#Comm h3 {
+  border-bottom: 1.5px solid #393e46;
+  width: 65%;
+}
+
+.row,
+.comPar,
+.stRow {
+  display: grid;
+  grid-template-columns: 45% 45%;
+  justify-content: center;
+}
+
+.row {
+  grid-template-rows: 65vh;
+}
+
+.abCol-1,
+.abCol-2,
+.ecol1,
+.ecol2,
+.comCol-3 {
+  background-color: #fcfefe;
+  margin: 10px;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 10px 1px #393e4659;
+}
+
+.pLax2 {
+  background-image: url(Images/lab.jpg);
+}
+
+/*Blog*/
+.erow {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  justify-content: center;
+  transform: translateY(-10%);
+}
+
+.ecol2 {
+  transform: translate(-15%, 45%);
+}
+
+.pLax4 {
+  background-image: url(Images/needle.jpg);
+}
+/*Studies*/
+
+.stCol1 {
+  margin: 10px;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 10px 1px #393e4659;
+}
+
+.stCol2 {
+  font-size: 24px;
+}
+
+.stCol1,
+.stCol2,
+.ecol1,
+.comCol-3 {
+  justify-self: center;
+  align-self: center;
+}
+
+.stCol1,
+.stCol2 {
+  height: 55vh;
+}
+
+.stCol2 {
+  transform: translateY(30%);
+}
+
+.pLax3 {
+  background-image: url(/Images/gloves.jpg);
+}
+
+/*Community*/
+#Comm {
+  height: 135vh;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.comCol-1:hover {
+  color: #11d3bc;
+  transition: 150ms ease-in;
+}
+
+.comCol-2 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.comCol-3 {
+  width: 46%;
+}
+
+.comCol-3 h3 {
+  text-align: center;
+  transform: translateX(25%);
+}
+
+.comPar {
+  display: flex;
+  flex-direction: column;
+}
+
+.facts ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.facts li {
+  margin: 5px;
+  text-align: center;
+}
+
+.facts h3 {
+  position: relative;
+  left: 18%;
+}
+
+.comPic-1,
+.comPic-2,
+.comPic-3 {
+  height: 250px;
+  width: 325px;
+  grid-template-rows: 25% 25% 25%;
+  margin: 25px;
+}
+
+.comPic-1 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(Images/undraw_Online_calendar_re_wk3t.png);
+}
+.comPic-2 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(Images/survey.png);
+}
+.comPic-3 {
+  position: relative;
+  z-index: 2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(Images/undraw_progress_data_4ebj.png);
+}
+
+/*foot*/
+.top {
+  display: grid;
+  grid-template-columns: 28% 22% 28% 22%;
+}
+
+footer {
+  background-color: #393e46;
+  color: #fcfefe;
+}
+
+#footer a {
+  text-decoration: none;
+  color: #fcfefe;
+}
+
+footer h4 {
+  color: #11d3bc;
+  text-decoration: underline;
+}
+
+.social ul {
+  position: relative;
+  justify-content: left;
+  height: 25%;
+}
+
+.social li {
+  list-style: none;
+  line-height: 2px;
+}
+
+.fb,
+.ig {
+  height: 50px;
+  width: 50px;
+  margin: 5px;
+  list-style: none;
+  cursor: pointer;
+}
+
+.fb:hover,
+.ig:hover {
+  background-color: #0a9181;
+  border-radius: 10px;
+}
+
+.faq li:hover,
+footer a:hover {
+  color: #0a9181;
+  transition: 150ms ease-in;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.contact li:nth-of-type(1):hover,
+.contact li:nth-of-type(2):hover,
+.contact li:nth-of-type(3):hover {
+  color: #0a9181;
+  transition: 150ms ease-in;
+  cursor: pointer;
+}
+
+.location {
+  position: relative;
+  top: 15%;
+  height: 0%;
+}
+
+.frmCrd1 {
+  height: 90vh;
+  margin: 25px;
+}
+
+.frmCrd {
+  display: flex;
+  background-color: #fcfefe;
+  flex-direction: column;
+  height: 70vh;
+  width: 55%;
+  padding: 25px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0.5px 0.5px 5px 0.5px #393e46;
+  border-top: 2.5rem solid #0a9181;
+}
+
+.frmCrd h1 {
+  text-align: center;
+}
+
+input {
+  font-family: inherit;
+  margin: 2px;
+}
+
+input[type="submit"] {
+  background-color: #0a9181;
+}
+
+input[type="submit"]:hover {
+  background-color: #393e46;
+  color: #11d3bc;
+  transition: 150ms ease-in;
+}
+
+#frm1,
+input[type="submit"] {
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+}
+
+textarea {
+  resize: none;
+  width: 80%;
+  height: 5rem;
+}
+
+article {
+  width: 85%;
+  padding: 25px;
+}
+
+article h2 {
+  text-shadow: 1px 1px 1.5px #393e46;
+}
+
+.backshp {
+  height: 50vh;
+  width: 45vw;
+  background-color: #0a9181;
+  position: absolute;
+  z-index: -2;
+  border-radius: 5px;
+  transform: skew(-50deg);
+  bottom: 15%;
+  right: 28%;
+  overflow: hidden;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
