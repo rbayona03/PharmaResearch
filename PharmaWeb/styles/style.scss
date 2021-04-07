@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap");
+/*font-family: 'Nunito', sans-serif;*/
+
+$PrimaryColor: #198d8d;
+$secColor: #4da6a6;
+$fontColor: #fff;
+$hoverColor: rgb(236, 150, 22);
+
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+body {
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+  font-family: "Nunito", sans-serif;
+}
+
+h1,
+h2 {
+  text-decoration: underline;
+  color: $PrimaryColor;
+  text-align: center;
+}
+
+h3 {
+  color: $secColor;
+}
+
+.navbar_header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.logo1 {
+  height: 80px;
+  width: 80px;
+  visibility: hidden;
+}
+
+.navBtn {
+  align-self: center;
+  cursor: pointer;
+}
+.change .bar1 {
+  background-color: $secColor;
+  transform: rotate(-45deg) translate(-10px, 11px);
+}
+.change .bar2 {
+  opacity: 0;
+}
+.change .bar3 {
+  background-color: $secColor;
+  transform: rotate(45deg) translate(-7px, -9px);
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 30px;
+  height: 5px;
+  margin: 0.5rem;
+  background: $PrimaryColor;
+  transition: all 500ms ease;
+}
+
+.navbarLinks {
+  list-style-type: none;
+  transition: all 1000ms ease;
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 99;
+  background-color: $PrimaryColor;
+}
+.navbarDrop {
+  height: 280px;
+}
+
+.navbarlink {
+  display: block;
+  padding: 0.5rem;
+  margin: 5px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: $fontColor;
+  transition: all 1s ease;
+  border-radius: 15px;
+}
+
+.navbarlink:hover {
+  padding-left: 1.5rem;
+  background: rgb(207, 206, 206);
+}
+
+.sec2 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .sec2A {
+    margin: 3rem;
+
+    .sec2Atxt {
+      h1,
+      h2,
+      h3 {
+        padding: 0.2rem;
+        color: black;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 24px;
+        text-decoration: none;
+      }
+      h2 {
+        font-size: 20px;
+      }
+      h3 {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .btnW {
+    height: 6rem;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .btn {
+      background-color: $PrimaryColor;
+      width: 13rem;
+      margin: 0.8rem;
+      padding: 0.6rem 0.25rem;
+      border-radius: 15px;
+      border: none;
+      outline: none;
+      transition: 100ms ease-in;
+      color: $fontColor;
+      font-size: 16px;
+      box-shadow: 1px 0 10px 1px rgba(0, 0, 0, 0.25);
+    }
+
+    .btn:hover,
+    .btn:focus {
+      background: $secColor;
+      transform: scale(1.05);
+    }
+  }
+}
+
+.Paralax {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 15vh;
+  width: 100%;
+  box-shadow: 1px 0 8px 1px rgba(0, 0, 0, 0.5);
+}
+.Paralax1 {
+  background-image: url(/Images/masks.jpg);
+}
+.Paralax2 {
+  background-image: url(/Images/lab.jpg);
+}
+.Paralax3 {
+  background-image: url(/Images/gloves.jpg);
+}
+
+.sec3 {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 1rem 0;
+  background-color: $fontColor;
+
+  .sec3W {
+    height: 35vh;
+    width: 80%;
+    padding: 2rem;
+  }
+  h4,
+  h3 {
+    text-align: center;
+  }
+
+  .sec3A {
+    background-color: #edeae2;
+    margin: 0.5rem 0;
+    border-radius: 3px;
+    box-shadow: 1px 0 10px 1px rgba(0, 0, 0, 0.089);
+  }
+
+  .secb1 {
+    display: none;
+  }
+}
+
+.sec4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  height: 80vh;
+  background-color: $fontColor;
+
+  .sec4W {
+    background-color: #edeae2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 35vh;
+    width: 85%;
+    margin: 0.5rem;
+    border-radius: 10px;
+    box-shadow: 1px 0 10px 1px rgba(0, 0, 0, 0.089);
+
+    .sec4_vid {
+      position: relative;
+      left: -20px;
+      border: none;
+      border-radius: 5px;
+    }
+  }
+}
+
+.sec5 {
+  height: 50vh;
+  .studies {
+    width: 90%;
+    margin: auto;
+    height: 43vh;
+    border-radius: 15px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+
+    li {
+      margin: 0.75rem;
+      padding: 0.15rem;
+      list-style: none;
+    }
+  }
+}
+
+.sec6 {
+  .facts {
+    min-height: 40vh;
+    max-width: 80%;
+    margin: auto;
+    position: relative;
+    background-image: url(/Images/bcg-1.png);
+    background-position: center;
+    background-size: 100% 85%;
+    background-repeat: no-repeat;
+
+    .prev {
+      position: absolute;
+      top: 45%;
+      left: 0;
+      transform: translateX(-100%);
+    }
+
+    .nxt {
+      position: absolute;
+      top: 45%;
+      right: 0;
+      transform: translateX(100%);
+    }
+
+    .btn {
+      width: 2rem;
+      height: 3rem;
+      border: none;
+      background-color: $fontColor;
+      font-size: 32px;
+      color: $PrimaryColor;
+      outline: none;
+    }
+
+    .btn:hover {
+      color: $secColor;
+    }
+  }
+
+  .data {
+    background-color: #edeae2;
+    height: 45vh;
+    width: 80%;
+    margin: 1rem auto;
+    padding: 0.25rem 1rem;
+    list-style: none;
+    border-radius: 3px;
+
+    .data1 {
+      padding: 0rem 0.5rem;
+    }
+  }
+}
+
+.sec7 {
+  background-color: $PrimaryColor;
+  height: 7vh; /*25vh on open*/
+  position: relative;
+  border: 2px solid $secColor;
+  border-width: 2px 0 2px 0;
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    margin: 0.5rem;
+    width: 100%;
+    top: 0;
+
+    li {
+      font-size: 28px;
+      list-style: none;
+      color: $fontColor;
+      cursor: pointer;
+      transition: 100ms ease-in;
+    }
+
+    li:hover {
+      color: rgb(236, 150, 22);
+      transform: scale(1.25);
+    }
+  }
+}
+
+em {
+  font-size: 10px;
+  text-align: center;
+}
